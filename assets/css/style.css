@@ -1,0 +1,164 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins%3Awght%40100%3B200%3B300%3B400&display=swap%27%29%3B);
+
+:root {
+    --color-background: #010102;
+    --color-ligth-50: #f8fafc;
+    --color-black: #000;
+
+    --color-gold-1: #FCDB4D;
+    --color-gold-2: #EDB400;
+    --color-gold-3: #E6B859;
+    --color-gold-4: #A57110;
+
+
+    --color-gradient-gold: linear-gradient(90deg, rgba(252, 219, 77, 1) 6%, rgba(237, 180, 0, 0.9472163865546218) 49%, rgba(230, 184, 89, 1) 95%);
+
+    --color-gradient: linear-gradient(90deg, var(--color-halogen), var(--color-actinide));
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--color-gold-2);
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: repeat;
+    /*background: var(--color-background);*/
+    background:url(/assets/imgs/magicpattern-pattern-1679078638940.png);
+
+}
+
+#title {
+    font-size: 25px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    gap: 1rem;
+}
+
+.periodic_table {
+    width: 100%;
+    text-align: center;
+    table-layout: fixed;
+    empty-cells: hide;
+}
+
+.elements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: nowrap;
+    font-size: 20px;
+    padding: 1rem;
+}
+
+td {
+    border: 1px solid var(--color-ligth-50);
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+td:hover{
+    transform: scale(1.12);
+    z-index: 10;
+    border-color: transparent;
+}
+
+td:hover .elements{
+    background: var(--color-gradient-gold);
+} 
+
+.name {
+    font-size: 8px;
+}
+.atomic_number {
+    font-size: 12px;
+
+}
+
+td:hover .name {
+    color: var(--color-ligth-50);
+} 
+td:hover .simbol {
+    color: var(--color-ligth-50);
+} 
+td:hover .atomic_number {
+    color: var(--color-ligth-50);
+} 
+
+
+
+
+/*
+
+
+.non_metal {
+    border: 1px solid var(--color-non_metal);
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.alkali_metal {
+    border: 1px solid var(--color-alkali_metal);
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.alkali_earth_metal {
+    border: 1px solid var(--color-alkaline_earth_metal);
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.transition_metal{
+    border: 1px solid var(--color-transition_metal);
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.metal{
+    border: 1px solid var(--color-metal);
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.metalloids{
+    border: 1px solid var(--color-metalloids);
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.halogen{
+    border: 1px solid var(--color-halogen);
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.noble_gas{
+    border: 1px solid var(--color-noble_gas);
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.lanthanide{
+    border: 1px solid var(--color-lanthanide);
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.actinide{
+    border: 1px solid var(--color-ligth-50);
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+*/
